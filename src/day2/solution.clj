@@ -8,6 +8,10 @@
 (def input
   (slurp "src/day2/input.txt"))
 
+(defn split-lines
+  [input]
+  (str/split input #"\n *"))
+
 ; score-board,
 ; opponent move A = ROCK B = PAPER C = SCISSOR
 ; protagonist move X = ROCK Y = PAPER Z = SCISSOR
@@ -34,9 +38,7 @@
    "C Y" 6
    "C Z" 7})
 
-(defn split-lines
-  [input]
-  (str/split input #"\n *"))
+
 
 (comment
   ;a)
